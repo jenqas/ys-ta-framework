@@ -1,0 +1,1 @@
+Run from command line: mvn -Dbrowser=msedge -Denvironment=dev -Dsurefire.suiteXmlFiles=src/test/resources/testng-smoke.xml clean test

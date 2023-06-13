@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Smoke Test - Mail Ru Login And Email creation">
+
+    <listeners>
+        <listener class-name = "org.ys.automation.core.util.TestListener"></listener>
+    </listeners>
+
+    <test name="Paste Bin - creation test">
+        <classes>
+            <class name="org.ys.automation.core.tests.PasteBinTest">
+                <methods>
+                    <include name="newPasteCreationTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="MailRu - Draft Email Creation Test">
+        <classes>
+            <class name="org.ys.automation.core.tests.MailRuTest">
+                <methods>
+                    <include name="mailRuDraftEmailCreationTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

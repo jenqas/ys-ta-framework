@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Appium Smoke Suite" parallel="classes" thread-count="1">
+
+    <listeners>
+        <listener class-name = "org.ys.automation.mobile.utils.MobileListener"/>
+    </listeners>
+
+    <test name="Epam Connect App">
+        <packages>
+            <package name="org.ys.automation.mobile.*"></package>
+        </packages>
+    </test>
+    </suite>
